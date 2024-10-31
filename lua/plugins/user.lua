@@ -31,35 +31,41 @@ return {
     },
   },
 
-  -- neogit plugin
+  -- scrollbar
   {
-    "NeogitOrg/neogit",
-    dependencies = {
-      "nvim-lua/plenary.nvim",         -- required
-      "sindrets/diffview.nvim",        -- optional - Diff integration
-
-      -- Only one of these is needed.
-      "nvim-telescope/telescope.nvim", -- optional
-      "ibhagwan/fzf-lua",              -- optional
-      "echasnovski/mini.pick",         -- optional
-    },
+    "dstein64/nvim-scrollview",
     opts = {},
-    config = true,
-    keys = {
-      { "<leader>gg", "<cmd>Neogit<cr>", desc = "NeoGit" }
-    }
   },
+
+  -- neogit plugin
+  -- {
+  --   "NeogitOrg/neogit",
+  --   dependencies = {
+  --     "nvim-lua/plenary.nvim",         -- required
+  --     "sindrets/diffview.nvim",        -- optional - Diff integration
+  --
+  --     -- Only one of these is needed.
+  --     "nvim-telescope/telescope.nvim", -- optional
+  --     "ibhagwan/fzf-lua",              -- optional
+  --     "echasnovski/mini.pick",         -- optional
+  --   },
+  --   opts = {},
+  --   config = true,
+  --   keys = {
+  --     { "<leader>gg", "<cmd>Neogit<cr>", desc = "NeoGit" }
+  --   }
+  -- },
 
   -- mini sorround
   {
-   'echasnovski/mini.surround',
-   opts = {},
+    "echasnovski/mini.surround",
+    opts = {},
   },
 
   -- rustaceanvim
   {
-    'mrcjkb/rustaceanvim',
-    version = '^5', -- Recommended
+    "mrcjkb/rustaceanvim",
+    version = "^5", -- Recommended
     lazy = false, -- This plugin is already lazy
   },
   -- == Examples of Overriding Plugins ==
